@@ -23,7 +23,12 @@ class computerViewController: UIViewController,UIPickerViewDelegate, UIPickerVie
     @IBOutlet weak var electronicPicker: UIPickerView!
     private let electronicNames = ["Laptop","Ipad","SmartPhone","Smart Watch","Head fones","Air Pods","Magic Mouse"]
     
-    @IBOutlet weak var electronicText: UITextField!
+    @IBOutlet weak var electronicText: UILabel!
+    
+    @IBAction func electronicStepper(_ sender: UIStepper) {
+        
+        electronicText.text = String(sender.value)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

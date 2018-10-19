@@ -25,7 +25,13 @@ class groceryViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     @IBOutlet weak var groceryPicker: UIPickerView!
     private let groceryNames = ["Onion","Tomato","Milk","Potato","LadyFinger","Ginger","Garlic"]
     
-    @IBOutlet weak var quantityText: UITextField!
+    
+    @IBOutlet weak var quantityText: UILabel!
+    
+    @IBAction func quantityStepper(_ sender: UIStepper) {
+        
+        quantityText.text = String(sender.value)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

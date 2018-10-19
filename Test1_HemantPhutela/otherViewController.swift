@@ -13,7 +13,14 @@ class otherViewController: UIViewController {
     
     @IBOutlet weak var itemText: UITextField!
     
-    @IBOutlet weak var quantityText: UITextField!
+    
+    @IBOutlet weak var quantityText: UILabel!
+    
+    @IBAction func otherStepper(_ sender: UIStepper) {
+        
+        itemText.text = String(sender.value)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
