@@ -18,7 +18,7 @@ class otherViewController: UIViewController {
     
     @IBAction func otherStepper(_ sender: UIStepper) {
         
-        itemText.text = String(sender.value)
+        quantityText.text = String(sender.value)
     }
     
     override func viewDidLoad() {
